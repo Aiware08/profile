@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LSH</title>
+  <style>
+    @font-face {
+      font-family: 'CobraBold';
+      src: url('KOTRA_BOLD.ttf') format('truetype');
+    }
+
+    :root {
+      --bg-color: #1a1a1a;
+      --text-color: #ffffff;
+      --header-bg: #111111;
+    }
+
+    body.light-mode {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --header-bg: #f0f0f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'CobraBold', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: var(--header-bg);
+      padding: 20px;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: var(--text-color);
+    }
+
+    main {
+      padding: 100px 20px;
+    }
+
+    .coming-soon {
+      font-size: 3rem;
+      color: var(--text-color);
+    }
+
+    .toggle-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-button" onclick="toggleMode()">다크/화이트 모드</button>
+
+  <header>
+    <img src="제목 없음-1.png" alt="로고">
+    <h1>LSH</h1>
+  </header>
+
+  <main>
+    <div class="coming-soon">홈페이지 공사중...</div>
+  </main>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
